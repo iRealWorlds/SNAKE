@@ -1,0 +1,117 @@
+body {
+	font-family: arial;
+	background: #C4B5B7;/*turquoise*/
+	overflow-y: hidden;
+}
+tiny {
+	font-size: 25%;
+}
+right {
+	float: right;
+}
+
+#board {
+	width: 1500px;
+	height: 840px;
+	border: 1px solid black;
+	position: relative;
+	background: grey;
+	box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.2);
+	padding: 0px;
+	margin: 0px;
+	overflow-y: hidden;
+}
+#snake {
+	/*font-size: 500%;
+	transition: all 1.5s;*/
+	color: cyan;
+	position: absolute;
+}
+#snake2 {
+	color: #E6D6FF;
+	position: absolute;
+}
+#pauseText {
+	position: absolute;
+	top: 45%;
+	text-align: center;
+	background: rgba(0, 255, 0, .5);
+	color: white;
+	font-size: 300%;
+	width: 100%;
+	display: none;
+	letter-spacing: 30px;
+}
+#star {
+	display: none;
+	position: absolute;
+	color: white;
+	text-shadow: 1px 10px 10px #9CD2FF;
+	left: 75px;
+	font-size: 150%;
+}
+#bomb {
+	display: none;
+	position: absolute;
+	color: #FF99B1;
+	left: 75px;
+	font-size: 150%;
+}
+#obstacles {
+	background: url(https://cdn.pixabay.com/photo/2013/07/12/15/19/world-map-149634_960_720.png) grey;
+	background-repeat:no-repeat;
+	background-size:cover;
+	display: block;
+	width: 100%;
+	height: 0px;
+	position: absolute;
+	bottom: 0%;
+}
+
+.sidebar {
+	/*display: block;*/
+	display: block;
+	background: white;
+	color: black;
+	width: 300px;
+	padding: 10px 25px 25px 25px;
+	border-radius: 5px;
+	position: relative;
+	margin: 0% 0% 2.5% 0%;
+	top: -800px;
+	left: 80.5%;
+}
+.directions {
+	color: white;
+	position: absolute;
+	top: 50px;
+	left: 84%;
+	width: 250px;
+	height: 250px;
+}
+.snakeRight {
+	position: absolute;
+	left: 15%;
+}
+.snakeLeft {
+	position: absolute;
+	left: 20%;
+}
+.snakeDown {
+	position: absolute;
+	left: 100%;
+	top: 25%;
+}
+.snakeTop {
+	position: absolute;
+	left: 100%;
+	top: 45%;
+}
+.footer {
+	position: absolute;
+	bottom: 5%;
+	text-align: center;
+	left: 50%;
+	color: white;
+	font-size: 75%;
+}

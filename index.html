@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src = "includes/javascript.js"></script>
+	<link type = "text/css" rel = "stylesheet" href = "includes/style.css" />
+	<link type="text/css" rel="stylesheet" href="includes/font-awesome-4.6.2/css/font-awesome.min.css">
+	<style>
+	ul {
+		padding: 0px;
+		margin: 0px;
+		list-style-type: none;
+	}
+	#score li {
+		padding-bottom: 5px;
+		border-bottom: 1.5px dashed rgba(0, 0, 0, 0.8);
+		color: rgba(0, 0, 0, 0.8);
+		margin: 5% 0%;
+	}
+	</style>
+</head>
+<body onkeydown="keyCode(event)">
+	<div id = "board">
+		<div id = "pauseText">GAME PAUSED</div>
+		<div id = "snake">
+			<tiny class = "snakeRight">Test</tiny>
+			<i class = "fa fa-long-arrow-right"></i>
+		</div>
+		<div id = "snake2">
+			<tiny class = "snakeRight">Test</tiny>
+			<i class = "fa fa-long-arrow-left"></i>
+		</div>
+		<div id = "star"><i class = "fa fa-diamond"></i></div>
+		<div id = "bomb"><i class = "fa fa-bomb"></i></div>
+		<div id = "obstacles">&nbsp;</div>
+	</div>
+
+	<div class = "sidebar">
+		<h3 style = "text-align: center; color: rgba(0, 0, 0, 0.8);"><i class = "fa fa-comments"></i> Server messages</h3><br/>
+		<ul class = "fa-ul" id = "messages">
+			<li><i class = "fa fa-check fa-li"></i> Welcome to the game!</li>
+		</ul>
+	</div>
+	
+	<div class = "sidebar">
+		<ul id = "score">
+			<h3 style = "text-align: center; color: rgba(0, 0, 0, 0.8);"><i class = "fa fa-trophy"></i> Scores</h3><br/>
+			<li>You <right>0 points</right></li>
+			<li><b>You <right>0 points</right></b></li>
+			<li>You <right>0 points</right></li>
+		</ul> 
+	</div>
+
+	<div class = "sidebar">
+			<h3 style = "text-align: center; color: rgba(0, 0, 0, 0.8);"><i class = "fa fa-hourglass-half"></i> Time played</h3><br/>
+				<i class = "fa fa-hourglass-half"></i> <span id = "timePlayed">00:00:00.00</span>
+			</div>
+	
+	<div class = "footer">
+		v0.1 BETA (Build 191016)<br/>
+		Copyright &copy; iReal Worlds 2016
+	</div>
+</body>
+</html>
